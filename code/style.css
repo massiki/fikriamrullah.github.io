@@ -1,0 +1,200 @@
+:root{
+    --work-sans: 'Work Sans', sans-serif;
+    --sacramento: 'Sacramento', cursive;
+    --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+    --pink: #e14e95;
+}
+
+.navbar{
+    background-color:rgba(255, 255, 255, 0.7);
+}
+/* 
+body{
+    height: 1500px; 
+} */
+
+.image::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background-image: url(../image/bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero p{
+    font-family:var(--work-sans);
+    text-shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+.hero a{
+    font-size: 1rem;
+}
+
+.hero h1{
+    font-family: var(--sacramento);
+    font-size: 6rem;
+    text-shadow: var(--shadow);
+}
+
+.button{
+    text-decoration: none;
+    background-color: white;
+    color: var(--pink);
+    padding: 8px 12px;
+    border-radius: 6px;
+    box-shadow: var(--shadow) ;
+}
+
+.button:hover{
+    background-color: var(--pink);
+    color: white; 
+}
+
+.button-map{
+    padding: 4px 8px;
+}
+
+.offcanvas-title{
+    font-size: 1.2rem;
+}
+
+.mynavbar .navbar-brand, .mynavbar .offcanvas-title{
+    font-family: var(--sacramento);
+    color: var(--pink);
+    font-weight: bold;
+}
+
+.myacara{
+    width: 100%;
+    height: 100%;
+}
+
+.myacara::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background-image: url(../image/bg-home.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.mt-10{
+    margin-top: 10px;
+}
+
+.myinfo-h1, .myinfo-p, .mygift-p{
+    color: white;
+}
+
+.myacara-h1, .myinfo-h1, .mygift-h1{
+    margin-top: 30px;
+    font-family: var(--sacramento);
+    font-size: 4rem;
+    color: var(--pink);
+    font-weight: bold;
+}
+
+.myacara-h2, .mygift-h2{
+    font-family: var(--work-sans);
+    font-size: 1.2rem;
+}
+
+.myacara-p, .myinfo-p, .mygift-p{
+    font-family: var(--work-sans);
+    font-size: .8rem;
+}
+
+.mygift-p{
+    font-size: 1.2rem;
+}
+
+.mygift-h2{
+    font-weight: bold;
+}
+
+.img{
+    width: 100%;
+}
+
+.cople{
+    margin-top: 25px;
+}
+
+.cople-h1{
+    font-family: var(--sacramento);
+    font-size: 3rem;
+    color: var(--pink);
+    font-weight: bold;
+}
+
+.cople-p{
+    font-family: var(--work-sans);
+    font-size: .8rem;
+}
+
+.myinfo, .mygift{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}
+
+.myfooter{
+    background-color: var(--pink);
+    padding: 24px 0;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-family: var(--work-sans);
+}
+
+.mycard{
+    background-color: var(--pink);
+    color: white;
+    font-family: var(--work-sans);
+}
+
+/*max*/
+@media (max-width: 2000px) {
+    
+}
+
+/*laptop*/
+@media (max-width: 991px) {
+    html{
+        font-size: 70%;
+    }
+
+    .simply-countdown > .simply-section{
+        padding: 35px !important;
+        width: 45px !important;
+        height: 45px !important;
+    }
+}
+
+/*tablet*/
+@media (max-width: 767px) {
+    html{
+        font-size: 70%;
+    }
+
+    .simply-countdown > .simply-section{
+        padding: 20px !important;
+    }
+}
+
+/*smartphone*/
+@media (max-width: 576px) {
+    html{
+        font-size: 50%;
+    }
+
+    .simply-countdown > .simply-section{
+        width:35px !important;
+        height:35px !important;
+    }
+}
